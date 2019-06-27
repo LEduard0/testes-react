@@ -1,0 +1,36 @@
+.products-list{
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+.products-list article {
+    background: #fff;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.products-list p {
+    color: #999;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.products-list a {
+    align-items: center;
+    background: none;
+    border: 2px solid #da522f;
+    border-radius: 5px;
+    color: #da522f;
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    height: 42px;
+    justify-content: center;
+    margin-top: 5px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.products-list a:hover {
+    background: #da522f;
+    color: #fff;
+}
