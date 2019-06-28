@@ -1,4 +1,6 @@
 import React from 'react';
+import Routes from './routes';
+
 import "./styles.css";
 
 import Header from './components/header';
@@ -8,7 +10,7 @@ import Footer from './components/footer';
 const App = () => (
   <div className="App">
     <Header />
-    <Main />
+    <Routes />
     <Footer />
   </div>
 )
