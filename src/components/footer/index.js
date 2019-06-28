@@ -5,4 +5,4 @@ const Footer = () => (
     <footer id="main-footer">Developed By - Luiz Eduardo</footer>
 )
 
-export default Footer
+export default Footer;
