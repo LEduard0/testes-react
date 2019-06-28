@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import api from '../../services/api';
 //import da propriedade do react-router
 import {Link} from "react-router-dom";
+
+import 'bootstrap/dist/css/bootstrap.css';
 //import do style para a pagina
 import "./styles.css";
 
@@ -53,15 +55,15 @@ export default class Main extends Component {
 
         return (
             //className: utilizado no lugar de class
-            <div className="products-list">
+            <div className="products-list row">
                 {this.state.products.map(product => (
-                    <article key={product._id}>
+                    <article key={product._id} className="col-md-12">
                         <b>{product.title}</b>
                         <p>{product.description}</p>
                         <Link to={`/products/${product._id}`}>Acessar</Link>
                     </article>
                 ))}
-                <div className="actions">
+                <div className="actions col-md-12">
                     <button disabled={page === 1} onClick={this.prevPage}>Anterior</button>
                     <button disabled={page === productsInfo.pages} onClick={this.nextPage}>Proximo</button>
                 </div>

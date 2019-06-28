@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import api from "../../services/api";
+//import bootstrap
+import 'bootstrap/dist/css/bootstrap.css';
 //import do style
 import './styles.css';
 
@@ -19,7 +21,7 @@ export default class Product extends Component {
         const { product } = this.state;
 
         return (
-            <div className="product-info">
+            <div className="product-info container-fluid">
                 <h1>{product.title}</h1>
                 <p>{product.description}</p>
 
